@@ -2,7 +2,7 @@
 
 int main()
 {
-	();
+	incrementDecrementOperator();
 
 	return 0;
 
