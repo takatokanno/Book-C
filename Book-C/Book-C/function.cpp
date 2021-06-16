@@ -36,4 +36,31 @@ void incrementDecrementOperator()
 
 }
 
-void
+void differenceOfPrepositionalAndPostpositional()
+{
+	int a = 1, b = 1;
+
+	printf("前置だと%dになります。\n", ++a);
+	printf("後置だと%dになります。\n", b++);
+
+}
+
+void comparisonOperators()
+{
+	int a = 10, b = 20;
+
+	printf("a=%d b=%d\n", a, b);
+	printf("a<b ・・・%d\n", a < b);
+	printf("a>b ・・・%d\n", a > b);
+	printf("a==b ・・・%d\n", a == b);
+	printf("a=b ・・・%d\n", (a = b));
+
+}
+void logicalOperator()
+{
+	int a = 30, x;
+
+	x = (0 <= a && a <= 100) ? a : 0;
+	printf("%d\n", x);
+
+}

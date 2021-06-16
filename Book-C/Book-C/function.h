@@ -1,3 +1,3 @@
 #pragma once
 
-void incrementDecrementOperator();//プロトタイプ宣言
+void logicalOperator();//プロトタイプ宣言
