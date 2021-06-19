@@ -1,16 +1,33 @@
-#include "function.h"
+ï»¿#include "function.h"
 #include <stdio.h>
 #include <string.h>
 
-//ƒ`ƒƒƒvƒ^[‚Q"‰‰Zq"
+//ãƒãƒ£ãƒ—ã‚¿ãƒ¼ï¼’"æ¼”ç®—å­"
+
+void initializingArray()
+{
+	int matrix[10][10];			// äºŒæ¬¡å…ƒé…åˆ—
+	int iCount = 0;
+	int jCount = 0;
+	for (int i = 0; i < 10; ++i)// ç¹°ã‚Šè¿”ã—å‡¦ç†(æ¡ä»¶)
+	{
+		printf("iCount = %d\n", iCount++);//iCount += 1;  // iCount + 1;
+		// ã“ã“ã¯10å›
+		for (int j = 0; j < 10; ++j)
+		{
+			printf("jCount = %d\n", jCount++);
+			matrix[i][j] = jCount;// ã“ã“ãŒ10*10å›å‡¦ç†ã•ã‚Œã¦ã‚‹
+		}
+	}
+}
 
 void calculatingOperator()
 {
-	printf("5+5‚Í%d‚Å‚·B\n", 5 + 5);
-	printf("5-5‚Í%d‚Å‚·B\n", 5 - 5);
-	printf("5*5‚Í%d‚Å‚·B\n", 5 * 5);
-	printf("5/5‚Í%d‚Å‚·B\n", 5 / 5);
-	printf("5/3‚Ì‚ ‚Ü‚è‚Í%d‚Å‚·B\n", 5 % 3);
+	printf("5+5ã¯%dã§ã™ã€‚\n", 5 + 5);
+	printf("5-5ã¯%dã§ã™ã€‚\n", 5 - 5);
+	printf("5*5ã¯%dã§ã™ã€‚\n", 5 * 5);
+	printf("5/5ã¯%dã§ã™ã€‚\n", 5 / 5);
+	printf("5/3ã®ã‚ã¾ã‚Šã¯%dã§ã™ã€‚\n", 5 % 3);
 
 }
 
@@ -19,20 +36,20 @@ void assignmentOperator()
 	int a = 90;
 	
 	a += 10;
-	printf("90‚É10‚ğ‘«‚µ‚½‚ç%d‚Å‚·B\n", a);
+	printf("90ã«10ã‚’è¶³ã—ãŸã‚‰%dã§ã™ã€‚\n", a);
 
 }
 
 void incrementDecrementOperator()
 {
 	int a = 1;
-	printf("‚Í‚¶‚ß‚Í%d‚Å‚µ‚½B\n", a);
+	printf("ã¯ã˜ã‚ã¯%dã§ã—ãŸã€‚\n", a);
 
 	a++;
-	printf("‚P‘‚¦‚Ä%d‚É‚È‚è‚Ü‚µ‚½B\n", a);
+	printf("ï¼‘å¢—ãˆã¦%dã«ãªã‚Šã¾ã—ãŸã€‚\n", a);
 
 	a--;
-	printf("‚PŒ¸‚Á‚Ä%d‚É‚È‚è‚Ü‚µ‚½B\n", a);
+	printf("ï¼‘æ¸›ã£ã¦%dã«ãªã‚Šã¾ã—ãŸã€‚\n", a);
 
 }
 
@@ -40,8 +57,8 @@ void differenceOfPrepositionalAndPostpositional()
 {
 	int a = 1, b = 1;
 
-	printf("‘O’u‚¾‚Æ%d‚É‚È‚è‚Ü‚·B\n", ++a);
-	printf("Œã’u‚¾‚Æ%d‚É‚È‚è‚Ü‚·B\n", b++);
+	printf("å‰ç½®ã ã¨%dã«ãªã‚Šã¾ã™ã€‚\n", ++a);
+	printf("å¾Œç½®ã ã¨%dã«ãªã‚Šã¾ã™ã€‚\n", b++);
 
 }
 
@@ -50,10 +67,10 @@ void comparisonOperators()
 	int a = 10, b = 20;
 
 	printf("a=%d b=%d\n", a, b);
-	printf("a<b EEE%d\n", a < b);
-	printf("a>b EEE%d\n", a > b);
-	printf("a==b EEE%d\n", a == b);
-	printf("a=b EEE%d\n", (a = b));
+	printf("a<b ãƒ»ãƒ»ãƒ»%d\n", a < b);
+	printf("a>b ãƒ»ãƒ»ãƒ»%d\n", a > b);
+	printf("a==b ãƒ»ãƒ»ãƒ»%d\n", a == b);
+	printf("a=b ãƒ»ãƒ»ãƒ»%d\n", (a = b));
 
 }
 void logicalOperator()

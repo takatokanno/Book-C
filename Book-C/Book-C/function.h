@@ -1,3 +1,3 @@
-#pragma once
+ï»¿#pragma once
 
-void logicalOperator();//ƒvƒƒgƒ^ƒCƒvéŒ¾
+void logicalOperator();//ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ—å®£è¨€
