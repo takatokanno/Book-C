@@ -2,7 +2,7 @@
 
 int main()
 {
-	evaluation();
+	wordCounter();
 
 	return 0;
 

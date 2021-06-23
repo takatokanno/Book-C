@@ -63,3 +63,110 @@ void evaluation()
 		printf("äÊí£ÇËÇ‹ÇµÇÂÇ§ÅB\n");
 }
 
+void hello3TimesRepeat()
+{
+	int i;
+	for (i = 1; i < 4; i++)
+		printf("Ç±ÇÒÇ…ÇøÇÕ%d\n", i);
+
+}
+
+void displayMultiplicationCalculation()
+{
+	int i, j;
+
+	for (j = 1; j <= 9; j++)
+		for (i = 1; i <= 9; i++)
+			printf("%d*%d=%d\n", j, i, j * i);
+
+}
+
+void eGetUpToLoop()
+{
+	char a;
+	do {
+		a = getchar();
+		printf("%c", a);
+	} while (a != 'e');
+}
+
+void suspendRepeating()
+{
+	int a, b = 1;
+	for (a = 0; a < 5; a++) {
+		if (a + b >= 3)
+			break;
+		printf("%d+%d=%d\n", a, b, a + b);
+	}
+}
+
+void repeatingNextTimesMove()
+{
+	int a, b = 1;
+	for (a = 1; a < 5; a++) {
+		if (a + b == 3)
+			continue;
+		printf("%d+%d=%d\n", a, b, a + b);
+	}
+}
+
+void omikuji()
+{
+	char a;
+
+	printf("1Å`3Ç≈çDÇ´Ç»êîéöÇì¸óÕÇµÇƒÇ≠ÇæÇ≥Ç¢\n");
+	a = getchar();
+
+	switch (a) {
+	case '1':
+		printf("íÜãg\n");
+		break;
+	case'2':
+		printf("ëÂãg\n");
+		break;
+	case'3':
+		printf("è¨ãg\n");
+		break;
+	default:
+		printf("ì¸óÕÇ™ä‘à·Ç¡ÇƒÇ¢Ç‹Ç∑ÅB\n");
+	}
+}
+void wordCounter()
+{
+	char c = '\0';
+	char prevletter;
+	int wordnum;
+	int word_in;
+
+	while (1)
+	{
+		wordnum = 0;
+		word_in = 0;
+		prevletter = '\0';
+		printf("ï∂éöóÒÇì¸óÕÇµÇƒÇ≠ÇæÇ≥Ç¢:");
+		while (1)
+		{
+			c = getchar();
+			if (c == '\n')
+			{
+				if (word_in)
+					wordnum++;
+				break;
+			}
+			prevletter = c;
+			if (c == ' ' || c == '.')
+			{
+				if (word_in)
+				{
+					wordnum++;
+					word_in = 0;
+				}
+			}
+			else
+				word_in = 1;
+		}
+		if (prevletter == '\0')
+			break;
+		printf("ÉèÅ[Éhêî:%d\n", wordnum);
+	}
+}
