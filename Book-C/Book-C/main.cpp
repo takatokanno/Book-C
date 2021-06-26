@@ -2,7 +2,7 @@
 
 int main()
 {
-	wordCounter();
+	displayAsciiCodeTable();
 
 	return 0;
 
