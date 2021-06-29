@@ -59,4 +59,26 @@ void displayAddress()
 
 }
 
-void 
+void pointerPlayValueReference()
+{
+	char x = 4, y;
+	char* p = &x;
+	y = *p;
+	printf("変数xの値は%dです\n", y);
+
+}
+
+void find_d_FromSentence()
+{
+	char s[] = "I love dog.";
+	char c = 'd';
+	char* p = NULL;
+
+	printf("文字列「%s」の中に文字「%c」", s, c);
+	p = strchr(s, c);
+	if (!p)
+		printf("はありません。\n");
+	else
+		printf("を発見しました。\n");
+}
+

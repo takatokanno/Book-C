@@ -1,4 +1,4 @@
 #pragma once
 
-void displayAddress();
+void find_d_FromSentence();
 

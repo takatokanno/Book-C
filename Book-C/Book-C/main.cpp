@@ -2,7 +2,7 @@
 
 int main()
 {
-	displayAddress();
+	find_d_FromSentence();
 
 	return 0;
 
